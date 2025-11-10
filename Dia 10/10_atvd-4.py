@@ -1,0 +1,19 @@
+# Verificação de Raiz Quadrada # Peça ao usuário um númedo e calcule sua raiz quadrada. Capture ValueError para entradas inválidas e ValueError para números negativos.
+
+try:
+  numero = float(input("Digite um número: "))
+
+  if numero < 0:
+    raise ValueError("Não existe raiz quadrada de número negativo!")
+
+  resultado = numero ** 0.5
+  print(f"A raiz quadrada de {numero} é {resultado}")
+
+except ValueError as e:
+  print(f"Erro: {e}")
+
+else:
+  print("Cálculo realizado com sucesso!")
+
+finally:
+  print("Execução do bloco try-finally foi concluída com sucesso!")

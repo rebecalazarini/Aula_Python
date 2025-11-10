@@ -1,0 +1,20 @@
+#Divisão Segura
+#Peça ao usuário para inserir dois números e imprimi o resulta da divisão. Use TRY para capturar ZeroDivisionError e ValueError.
+
+try: 
+  num1 = float(input("Digite o primeiro número: "))
+  num2 = float(input("Digite o segundo número: "))
+
+  result = num1 / num2
+
+except ZeroDivisionError:
+  print("Error: Número não divisivel por zero!")
+
+except ValueError:
+  print("Error: Digite apenas um número!")
+
+else:
+  print("Resultado:", result)
+
+finally:
+  print("Execução do bloco try-finally foi concluída com sucesso!")
