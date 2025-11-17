@@ -1,0 +1,19 @@
+# Acesso a Lista
+# Crie uma lista com 3 elemntos e peça ao usuário para acessa um índice. Capture IndexError se o índice estiver fora do intervalo.
+
+try:
+  lista = ["Cachorro", "Chupeta", "Rebeca"]
+  indice = int(input("Digite o valor da sua requisição(0 a 2): "))
+  req = lista[indice]
+
+except IndexError:
+  print("Error: Indice fora do intervalo!")
+
+except ValueError:
+  print("Você fez uma requisição errada!")
+
+else: 
+  print("Resultado da sua requisição:", req)
+
+finally:
+  print("Execução do bloco try-finally foi concluída com sucesso!")
