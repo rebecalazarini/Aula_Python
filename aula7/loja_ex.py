@@ -5,7 +5,6 @@ dados = {
     'Estoque':[200, 150, 75, 500]
 }
 df = pd.DataFrame(dados)
-
 df['Total'] = df['Preco'] * df['Estoque']
 
 df.to_csv("tabela_completa.csv", index=False)

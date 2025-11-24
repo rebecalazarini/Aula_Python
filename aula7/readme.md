@@ -51,6 +51,7 @@ print(serie * 2)
 - Tipos de Dados Diversos: Pode conter dados de diferentes tipos, por exemplo, números em uma coluna e strings em outra.
 
 # Exemplo
+```bash
 dados = {
     'Nome':['Alice', 'Bob', 'Carlos],
     'Idade':[25, 20, 25],
@@ -58,7 +59,7 @@ dados = {
 }
 df = pd.DataFrame(dados)
 print(df)
-
+```
 # A partir de uma lista de listas
 ```bash
 dados = [['Alice', 25, 5000], ['Bob', 30 , 6000], ['Carlos', 35 , 7000]]
