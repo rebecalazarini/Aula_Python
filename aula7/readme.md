@@ -58,3 +58,18 @@ dados = {
 }
 df = pd.DataFrame(dados)
 print(df)
+
+# A partir de uma lista de listas
+```bash
+dados = [['Alice', 25, 5000], ['Bob', 30 , 6000], ['Carlos', 35 , 7000]]
+df = pd.DataFrame(dados, columns=['Nome', 'Idade', 'Salario'])
+print(df)
+```
+
+# Operações com DataFrame 
+- Selecionar colunas: print(df['Nome’])
+- Selecionar múltiplas colunas: print(df[['Nome', 'Salario’]])
+- Filtrar Dados (linhas): print(df[df['Idade'] > 28])
+- Adicionar Nova Coluna: df['Bonus'] = df['Salario'] * 0.1
+- Remover Coluna: df = df.drop(columns=['Bonus’])
+- Estatísticas Rápidas: print(df.describe())
