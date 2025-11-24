@@ -11,3 +11,8 @@ df['Total'] = df['Preco'] * df['Estoque']
 df.to_csv("tabela_completa.csv", index=False)
 print ("tabela Conpleta: \n", df)
 print("\n arquivo 'tabela_completa.csv' criado com sucesso!")
+
+print("\n Preço maior que 100 e tabela alterada: ")
+print(df[df['Preco'] > 100])
+df.to_csv("filtro_maior_100.csv", index=False)
+
